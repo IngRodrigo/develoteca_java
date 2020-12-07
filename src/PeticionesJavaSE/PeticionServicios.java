@@ -17,7 +17,7 @@ import okhttp3.Response;
  * REQUIERE LIBRERIA JAR okhttp!!! adicionalmente la libreria okio
  */
 public class PeticionServicios {
-
+    
     public static void ejecutarPeticionGetUnRegistro(String id) {
         OkHttpClient client = new OkHttpClient().newBuilder()
                 .build();
@@ -35,7 +35,7 @@ public class PeticionServicios {
             System.out.println("e = " + e);
         }
     }
-
+    
     public static void ejecutarPeticionGetListaRegistros() {
         OkHttpClient client = new OkHttpClient().newBuilder()
                 .build();
@@ -59,7 +59,7 @@ public class PeticionServicios {
             System.out.println("e = " + e);
         }
     }
-
+    
     //envaindo formato json
     public static void ejecutarPeticionPostCreateRegistro() {
         RequestJson requestJson = new RequestJson();
